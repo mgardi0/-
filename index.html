@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تەندروستی و سەلامەتی زانکۆ - ٨ی مارس</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'NRT';
+            src: url('NRT-Reg.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            font-family: 'NRT', Arial, sans-serif;
+            color: #1a1a1a;
+            /* پاشبنەمای ڕەنگاوڕەنگی جوڵاو */
+            background: linear-gradient(-45deg, #ff9a9e, #fecfef, #a1c4fd, #c2e9fb);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* دیزاینی شووشەیی (Glassmorphism) */
+        .glass {
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        }
+
+        .serif {
+            font-family: 'NRT', Arial, sans-serif;
+        }
+        
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="max-w-7xl mx-auto px-6 pt-8 relative z-10 fade-in">
+        <div class="glass inline-flex items-center gap-x-4 px-6 py-3 rounded-2xl">
+            <img src="salahaddin.logo.png" alt="لۆگۆی زانکۆی سەڵاحەدین" class="h-12 w-auto object-contain">
+            <span class="serif text-xl md:text-2xl font-bold text-purple-900 tracking-wide">بەڕێوەبەرایەتی تەندروستی و سەلامەتی</span>
+        </div>
+    </nav>
+
+    <header class="max-w-7xl mx-auto px-6 py-12 md:py-16 grid md:grid-cols-2 gap-12 items-center relative z-10">
+        <div class="fade-in glass p-10 rounded-3xl">
+            <h1 class="serif text-4xl md:text-5xl leading-tight mb-6 text-gray-900 font-bold">
+                بەبۆنەی ٨ی مارس، <br> <span class="text-purple-800">ڕۆژی جیهانی ئافرەتان</span>
+            </h1>
+            <p class="text-lg text-gray-800 mb-4 leading-relaxed">
+                ڕۆژی جیهانی ئافرەتان تەنها یادکردنەوەیەکی ئاسایی نییە، بەڵکو گوزارشتە لە کۆڵنەدان، هێز و ئەو دەورە گرنگەی ئافرەتان لە ئاوەدانکردنەوەی کۆمەڵگە و پاراستنی بەها مرۆییەکاندا دەیگێڕن. 
+            </p>
+            <p class="text-lg text-purple-900 font-semibold leading-relaxed">
+                ئافرەت هەمیشە وەک سیمبولی ئاشتی، میهرەبانی و خۆڕاگری ماوەتەوە.
+            </p>
+        </div>
+
+        <div class="relative flex justify-center items-center h-[450px] glass p-4 rounded-3xl shadow-xl overflow-hidden fade-in">
+            <img class="w-full h-full object-cover rounded-2xl" src="mars.png" alt="ڕۆژی جیهانی ئافرەتان">
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-8 md:py-12 relative z-10">
+        <div class="max-w-4xl mx-auto glass p-8 md:p-12 rounded-3xl fade-in flex flex-col md:flex-row items-center gap-8 shadow-lg transition-all hover:bg-white/50">
+            <div class="w-48 h-48 shrink-0 relative rounded-full overflow-hidden border-4 border-white shadow-xl">
+                <img src="aryan.jpg" alt="ئاریان حسێن دزیی" class="w-full h-full object-cover">
+            </div>
+            
+            <div>
+                <svg class="w-10 h-10 text-purple-400 mb-4 opacity-70" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+                <p class="text-lg text-gray-800 leading-relaxed mb-6 font-medium">
+                    ئەم یادە لە خۆم و لە تەواوی ئافرەتانی جیهان و کوردستان بە گشتی، و ئافرەتانی ناو کایەی زانکۆ و خوێندن بە تایبەتی پیرۆز دەکەم. هیوای ژیانێکی پڕ لە ئارامی، تەندروستییەکی باش و سەلامەتی بۆ هەموو خانمان دەخوازم. هیوادارم هەمیشە لە پێشەنگ بن بۆ بنیاتنانی داهاتوویەکی گەشتر.
+                </p>
+                <h3 class="serif text-2xl font-bold text-purple-900 mb-1">ئاریان حسێن دزیی</h3>
+                <p class="text-gray-800 font-semibold">بەڕێوەبەری تەندروستی و سەلامەتی</p>
+                <p class="text-gray-600 text-sm mt-1">زانکۆی سەڵاحەدین - هەولێر</p>
+            </div>
+        </div>
+    </main>
+
+    <footer dir="ltr" class="mt-8 border-t border-white/40 max-w-7xl mx-auto px-6 py-8 text-center md:text-left glass rounded-t-3xl text-gray-800 relative z-10">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm mb-4 md:mb-0 font-medium">&copy; 2026 Directorate of Health and Safety - Salahaddin University. All rights reserved.</p>
+            <div class="flex gap-x-6 text-sm font-medium">
+                <a href="#" class="hover:text-purple-800 transition-colors">University Website</a>
+                <a href="#" class="hover:text-purple-800 transition-colors">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
